@@ -4,6 +4,8 @@
 #include <unistd.h> // chdir header
 #include <romfs-wiiu.h>
 #include <whb/proc.h>
+#include <iostream>
+#include <vector>
 
 bool isGamePaused;
 
@@ -572,7 +574,7 @@ int main(int argc, char **argv)
 
     srand(time(NULL));
 
-    while (!shouldCloseTheGame && WHBProcIsRunning())
+    while (WHBProcIsRunning())
     {
         currentFrameTime = SDL_GetTicks();
         deltaTime = (currentFrameTime - previousFrameTime) / 1000.0f;
