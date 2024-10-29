@@ -15,10 +15,11 @@ I built everything using Windows 10
 * Install [devkitpro](https://devkitpro.org/wiki/Getting_Started#Unix-like_platforms)
 * On a terminal install needed libraries:
   `pacman -S wiiu-dev`
+  
+* Install [libromfs-wiiu](https://github.com/yawut/libromfs-wiiu)
+  
 *  and then
   `pacman -Syu wiiu-sdl2 wiiu-sdl2_image wiiu-sdl2_mixer wiiu-sdl2_ttf`
-
-* Install [libromfs-wiiu](https://github.com/yawut/libromfs-wiiu)
   
 * Clone this repo
 * `cd wii-u-sdl-starter`
