@@ -20,7 +20,7 @@ PKGCONF		:=	$(PORTLIBS_PATH)/wiiu/bin/powerpc-eabi-pkg-config
 # INCLUDES is a list of directories containing header files
 # ROMFS is a folder to generate app's romfs
 #-------------------------------------------------------------------------------
-TARGET		:=	Wii_U_SDL_Starter
+TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
 SOURCES		:=	src
 INCLUDES	:=	include
